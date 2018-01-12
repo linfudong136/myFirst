@@ -66,6 +66,9 @@
           });
         $('.width img').click(function(){
           var name=prompt("请输入你的名字");
+          if(name==""){
+             alert('请输入你的名字');
+          }
           if(name=="赖满柱"){
              alert('thank you');
              return;
@@ -104,8 +107,9 @@
            if(name=="沈艳君"){
             alert('thank you');
             return;
-          }
+          }else{
           alert('没有你的名字,请耐心等待后续加上');
+          }
         });
      }
   </script>
