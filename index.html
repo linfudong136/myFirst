@@ -59,9 +59,8 @@
 
   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript">
-     $(function(){
-           
-        $('.width img').each(function(index,ele){
+     window.onload=function(){
+       $('.width img').each(function(index,ele){
                 ele.widht=Math.floor(ele.width/2);
                 ele.height=Math.floor(ele.width/2);
           });
@@ -108,7 +107,7 @@
           }
           alert('没有你的名字,请耐心等待后续加上');
         });
-     });
+     }
   </script>
 </body>
 </html>
