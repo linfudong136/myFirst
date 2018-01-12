@@ -2,28 +2,113 @@
 <html>
 <head>
 	<title>firstapp</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
-      div{
-      	color: red;
-      	font-size: 15px;
+      *{
+        margin: 0px;
+        padding: 0px;
       }
-       .junlin{
-           font-size: 100px;
-           color: yellow;
+      body{
+          background-color: orange;
+      }
+       .width{
+        position: relative;
+         overflow: hidden;
+         width: 800px;
+         margin: 0 auto;
+         background-color: white;
+         padding-bottom: 30px;
+       }
+       .imgbox{
+        padding: 5px;
+        border: 1px solid gray;
+        float: left;
+        margin-right: 3px; 
+        margin-top: 3px; 
+       }
+       .imgbox img{
+         cursor:pointer;
+       }
+       .footer{
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          background-color: red;
+          color: white;
        }
 	</style>
 </head>
 <body>
-<img src="images/大飞机爆炸.gif">
-<input value="www.baidu.com" readonly />
-<div>hello word</div>
-<p>佩服张力炜什么技能以下三个，请看</p>
-<select>
-	<option>玩游戏</option>
-	<option>买书</option>
-	<option>不洗澡</option>
-</select>
+  <div class="width">
+      <div class="imgbox"><img src="images/psu.jpg">  </div>
+      <div class="imgbox"><img src="images/psue.jpg"> </div>
+      <div class="imgbox"><img src="images/psue1.jpg"></div>
+      <div class="imgbox"><img src="images/psue2.jpg"></div>
+      <div class="imgbox"><img src="images/psue3.jpg"></div>
+      <div class="imgbox"><img src="images/psue4.jpg"></div>
+      <div class="imgbox"><img src="images/psue5.jpg"></div>
+      <div class="imgbox"><img src="images/psue6.jpg"></div>
+      <div class="imgbox"><img src="images/psue7.jpg"></div>
+      <div class="imgbox"><img src="images/psue8.jpg"></div>
+      <div class="imgbox"><img src="images/psue9.jpg"></div>
+      <div class="footer">敬请期待后续的改进.....</div>
+  </div>
 
-<p class="junlin">俊林兄，就是个46货,最喜欢偷偷看黄色片子</p>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+     $(function(){
+           
+        $('.width img').each(function(index,ele){
+                ele.widht=Math.floor(ele.width/2);
+                ele.height=Math.floor(ele.width/2);
+          });
+        $('.width img').click(function(){
+          var name=prompt("请输入你的名字");
+          if(name=="赖满柱"){
+             alert('thank you');
+             return;
+          }
+           if(name=="曾福恒"){
+            alert('thank you');
+            return;
+          }
+           if(name=="王国宝"){
+            alert('thank you');
+            return;
+          }
+           if(name=="张国东"){
+            alert('thank you');
+            return;
+          }
+           if(name=="张嘉丽"){
+            alert('thank you');
+            return;
+          }
+           if(name=="杜慧丽"){
+            alert('thank you');
+            return;
+          }
+           if(name=="吕映灵"){
+            alert('thank you');
+          }
+           if(name=="龙香莲"){
+            alert('thank you');
+            return;
+          }
+           if(name=="张雪婷"){
+            alert('thank you');
+            return;
+          }
+           if(name=="沈艳君"){
+            alert('thank you');
+            return;
+          }
+          alert('没有你的名字,请耐心等待后续加上');
+        });
+     });
+  </script>
 </body>
 </html>
